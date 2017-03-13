@@ -22,8 +22,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		*str = '\0';
 		return (str);
 	}
-	str = ft_strnew(len);
-	if (!s)
+	if (!s || !(str = ft_strnew(len)))
 		return (NULL);
 	if (str)
 		ft_strncpy(str, &s[start], len);

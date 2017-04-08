@@ -25,7 +25,7 @@ FILENAMES_2 = ft_memalloc.c	ft_putstr.c ft_putchar.c ft_memdel.c ft_strnew.c \
 			  ft_putstr_fd.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
 FILENAMES_3 = ft_back_white.c ft_front_white.c ft_absval.c ft_lstnew.c \
 			  ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
-			  ft_isupper.c ft_islower.c ft_itoa_base.c
+			  ft_isupper.c ft_islower.c ft_itoa_base.c get_next_line.c
 
 CC = gcc
 AR = ar

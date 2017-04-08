@@ -18,8 +18,9 @@
 # include <unistd.h>
 # include <limits.h>
 # include <stdio.h>
-
+# include <fcntl.h>
 # define HEX "0123456789ABCDEF"
+# define BUFF_SIZE 40
 
 typedef	struct		s_list
 {
@@ -107,5 +108,6 @@ int					ft_back_white(char const *str);
 int					ft_absval(int num);
 int					ft_isupper(int c);
 int					ft_islower(int c);
+int					get_next_line(const int fd, char **line);
 
 #endif

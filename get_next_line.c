@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 static	int		ft_line(char **send, char *buff, char **saved)
 {
@@ -48,7 +48,7 @@ int				get_next_line(const int fd, char **line)
 	static char	*saved = NULL;
 
 	ft_bzero((void *)buf, sizeof(char) * (BUFF_SIZE + 1));
-	if (fd < 0)
+	if (!line || fd < 0 || read(fd, buf, 0) < 0)
 		return (-1);
 	if (saved && (ft_line(line, NULL, &saved)))
 		return (1);
@@ -60,8 +60,9 @@ int				get_next_line(const int fd, char **line)
 		if (ft_line(line, buf, &saved))
 			return (1);
 	}
-	if (*saved && (*line = ft_strdup(saved)))
+	if (saved && *saved)
 	{
+		*line = ft_strdup(saved);
 		ft_strclr(saved);
 		return (1);
 	}

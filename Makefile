@@ -54,31 +54,23 @@ INC = -I ./includes
 all: $(NAME)
 
 $(NAME): $(OBJECTS_1) $(OBJECTS_2) $(OBJECTS_3) $(OBJECTS_4)
-	$(AR) rc $@ $^
+	@$(AR) rc $@ $^
 	@ranlib $@
 
-build1:
-	@mkdir $@
-
-build2:
-	@mkdir $@
-
-build3:
-	@mkdir $@
-
-build4:
-	@mkdir $@
-
-build1/%.o: %.c | build1
+build1/%.o: %.c
+	@mkdir -p $(shell dirname $@)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
-build2/%.o: %.c | build2
+build2/%.o: %.c
+	@mkdir -p $(shell dirname $@)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
-build3/%.o: %.c | build3
+build3/%.o: %.c
+	@mkdir -p $(shell dirname $@)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
-build4/%.o: %.c | build4
+build4/%.o: %.c
+	@mkdir -p $(shell dirname $@)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
 clean:

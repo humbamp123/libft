@@ -58,19 +58,19 @@ $(NAME): $(OBJECTS_1) $(OBJECTS_2) $(OBJECTS_3) $(OBJECTS_4)
 	@ranlib $@
 
 build1/%.o: %.c
-	@mkdir -p $(shell dirname $@)
+	@mkdir -p $(@D)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
 build2/%.o: %.c
-	@mkdir -p $(shell dirname $@)
+	@mkdir -p $(@D)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
 build3/%.o: %.c
-	@mkdir -p $(shell dirname $@)
+	@mkdir -p $(@D)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
 build4/%.o: %.c
-	@mkdir -p $(shell dirname $@)
+	@mkdir -p $(@D)
 	@$(CC) $(CCFLAGS) -c $^ -o $@ $(INC)
 
 clean:

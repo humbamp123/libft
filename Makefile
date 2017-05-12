@@ -30,7 +30,7 @@ FILENAMES_3 = ft_back_white.c ft_front_white.c ft_absval.c ft_lstnew.c \
 FILENAMES_4 = ft_printf.c printf_std.c vasprintf.c \
 			ft_printf_s.c ft_printf_d.c ft_printf_p.c ft_printf_u.c \
 			ft_printf_c.c ft_printf_o.c ft_printf_x.c ft_printf_flags.c \
-			ft_width.c ft_printf_per.c ft_printf_cap_s.c
+			ft_width.c ft_printf_per.c ft_printf_cap_s.c ft_arraydel.c
 
 CC = gcc
 AR = ar

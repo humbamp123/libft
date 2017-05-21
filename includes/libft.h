@@ -6,7 +6,7 @@
 /*   By: apineda <apineda@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/21 11:21:43 by apineda           #+#    #+#             */
-/*   Updated: 2017/05/19 21:48:31 by apineda          ###   ########.fr       */
+/*   Updated: 2017/05/20 23:11:39 by apineda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@
 # define G "\033[32;1m"
 # define Y "\033[33;1m"
 # define R "\033[31;1m"
+# define LR "\033[91;1m"
 # define B "\033[34;1m"
+# define C "\033[36;1m"
 # define W "\033[0m"
 
 # ifndef ERRS

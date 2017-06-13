@@ -23,9 +23,9 @@ FILENAMES_2 = ft_memalloc.c	ft_putstr.c ft_putchar.c ft_memdel.c ft_strnew.c \
 			  ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c \
 			  ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putendl.c ft_putnbr.c \
 			  ft_putstr_fd.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-FILENAMES_3 = ft_back_white.c ft_front_white.c ft_absval.c ft_lstnew.c \
-			  ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
-			  ft_isupper.c ft_islower.c ft_itoa_base.c get_next_line.c
+FILENAMES_3 = ft_absval.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
+			  ft_lstiter.c ft_lstmap.c ft_isupper.c ft_islower.c \
+			  ft_itoa_base.c get_next_line.c
 
 FILENAMES_4 = ft_printf.c printf_std.c vasprintf.c \
 			ft_printf_s.c ft_printf_d.c ft_printf_p.c ft_printf_u.c \

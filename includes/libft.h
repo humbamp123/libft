@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apineda <apineda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: andres <andres@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/21 11:21:43 by apineda           #+#    #+#             */
-/*   Updated: 2017/05/20 23:11:39 by apineda          ###   ########.fr       */
+/*   Updated: 2017/06/13 15:27:02 by andres           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,8 +132,6 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_isspace(char const *str);
-int					ft_front_white(char const *str);
-int					ft_back_white(char const *str);
 int					ft_absval(int num);
 int					ft_isupper(int c);
 int					ft_islower(int c);

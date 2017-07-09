@@ -51,7 +51,8 @@ CCFLAGS ?= -Wall -Wextra -Werror
 
 INC = -I ./includes
 
-all: $(NAME)
+all: 
+	@$(MAKE) -j $(NAME)
 
 $(NAME): $(OBJECTS_1) $(OBJECTS_2) $(OBJECTS_3) $(OBJECTS_4)
 	@$(AR) rc $@ $^
